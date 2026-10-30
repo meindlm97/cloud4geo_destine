@@ -20,7 +20,7 @@ Destination Earth is a flagship initiative of the European Commission to develop
 
 **⚠️Note**: 
 - Data is provided on a hierachical [HEALPix](https://healpix.sourceforge.io/) grid for all models (ICON & IFS-FESOM/IFS-NEMO). 
-- Data is provided on various levtype values, for different parameters: 2 metre temperature has the parameter 167, Total precipitation rate has the parameter 260048.
+- Data is provided on various levtype values, for different parameters: 2 metre temperature (2t) has the parameter 167, Total precipitation rate (avg_tprate) has the parameter 235055. For more information check out the [Climate DT data catalogue](https://platform.destine.eu/services/documents-and-api/doc/?service_name=climate-dt-user-guide).
 
 The easiest way to access the Destination Earth DT data is via the [Polytope web service](https://github.com/destination-earth-digital-twins/polytope-examples/tree/main):
 
