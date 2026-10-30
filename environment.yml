@@ -1,0 +1,20 @@
+name: eodc-zarr
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12
+  - pip
+  - ipykernel
+  - eccodes
+  - zarr
+  - xarray
+  - dask
+  - fsspec
+
+  - pip:
+      - "earthkit-data[zarr,polytope,covjsonkit]"
+      - earthkit-plots
+      - earthkit-geo
+      - polytope-client
