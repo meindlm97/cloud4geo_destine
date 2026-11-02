@@ -1,9 +1,9 @@
-# download_GAR.py
+# download_2t_ifs-nemo_hist_1990-2014.py
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Download hourly 2 metre temperature(2t) form the Destination Earth
-Climate Digital Twin (Climate DT) via th Polytiope service and store it
+Download hourly 2 metre temperature(2t) from the Destination Earth
+Climate Digital Twin (Climate DT) via the Polytope service and store it
 as a single Zarr archive.
 
 Data: IFS-NEMO model, historical experiment, high resolution
@@ -39,10 +39,10 @@ for i, date in enumerate(dates):
         "experiment": "hist",
         "generation": "2",                # Climate DT production generation (phase 2)
         "levtype": "sfc",                 # surface (single-level) field
-        "date": date_str,                 # day to retrieve
+        "date": date_str,                 # days to retrieve
         "model": "ifs-nemo",              # climate model (IFS-NEMO)
-        "expver": "0001",                 # experiemnt version
-        "param": "167",                   # GRIB parameter ID 167 = 2-m temperature (t2m)
+        "expver": "0001",                 # experiment version
+        "param": "167",                   # GRIB parameter ID 167 = 2t
         "realization": "1",               # ensemble member
         "resolution": "high",             
         "stream": "clte",                 # climate stream for Climate DT output
